@@ -142,19 +142,33 @@ export default function Home() {
               Privacy
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">
-              Local-first by design
+              Privacy Policy
             </h2>
             <p className="mt-5 leading-8 text-slate-600">
-              Pet Medication Log is designed for offline use. Your pet profiles,
-              medications, reminder schedules, and logs stay on your device.
+              Pet Med Log does not collect, store, or share personal data. All
+              data, including pets, medications, reminders, and logs, is stored
+              locally on your device.
+            </p>
+            <p className="mt-5 leading-8 text-slate-600">
+              If you contact support via email, your email is used only to
+              respond to your request.
+            </p>
+            <p className="mt-5 font-semibold text-slate-800">
+              Contact:{" "}
+              <a
+                href="mailto:erosimcity@gmail.com?subject=Pet%20Medication%20Log%20Support"
+                className="text-emerald-700 underline decoration-emerald-300 underline-offset-4"
+              >
+                erosimcity@gmail.com
+              </a>
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              "No backend service",
-              "No AI processing",
-              "No external data APIs",
-              "No required sign-in",
+              "No analytics",
+              "No tracking",
+              "No external servers",
+              "No third-party APIs",
             ].map((item) => (
               <div
                 key={item}
