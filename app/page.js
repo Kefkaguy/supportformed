@@ -65,6 +65,15 @@ export default function Home() {
             <h1 className="mx-auto max-w-3xl text-5xl font-bold leading-[1.02] tracking-normal text-slate-950 sm:text-6xl">
               Pet Medication Log
             </h1>
+            <p className="mx-auto mt-5 max-w-2xl text-lg font-semibold text-slate-800">
+              For support, contact:{" "}
+              <a
+                href="mailto:erosimcity@gmail.com?subject=Pet%20Medication%20Log%20Support"
+                className="text-emerald-700 underline decoration-emerald-300 underline-offset-4"
+              >
+                erosimcity@gmail.com
+              </a>
+            </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               A simple, privacy-first iPhone app for tracking pet medications,
               setting local reminders, and keeping daily doses on schedule.
@@ -188,18 +197,26 @@ export default function Home() {
       <section className="bg-slate-950 px-6 py-16 text-white lg:px-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-3xl font-bold">Need more help?</h2>
+            <h2 className="text-3xl font-bold">Contact Support</h2>
             <p className="mt-3 max-w-2xl text-slate-300">
               Contact support for bugs, reminder issues, accessibility feedback,
               or questions about using Pet Medication Log.
             </p>
           </div>
-          <a
-            href="mailto:erosimcity@gmail.com?subject=Pet%20Medication%20Log%20Support"
-            className="inline-flex h-14 items-center justify-center rounded-2xl bg-white px-6 text-base font-bold text-slate-950 transition hover:bg-emerald-100"
-          >
-            erosimcity@gmail.com
-          </a>
+          <div className="rounded-3xl bg-white p-6 text-slate-950 shadow-xl shadow-slate-900/20">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">
+              Email
+            </p>
+            <a
+              href="mailto:erosimcity@gmail.com?subject=Pet%20Medication%20Log%20Support"
+              className="mt-2 block text-lg font-bold text-slate-950 underline decoration-emerald-300 underline-offset-4"
+            >
+              erosimcity@gmail.com
+            </a>
+            <p className="mt-4 text-sm font-semibold text-slate-600">
+              Response time: within 24-48 hours
+            </p>
+          </div>
         </div>
       </section>
     </main>
