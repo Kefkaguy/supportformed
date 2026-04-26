@@ -36,8 +36,6 @@ const faqs = [
   },
 ];
 
-const screens = ["Pets", "Meds", "Today", "Logs"];
-
 function CheckIcon() {
   return (
     <svg
@@ -55,85 +53,25 @@ function CheckIcon() {
   );
 }
 
-function PhonePreview() {
-  return (
-    <div className="mx-auto w-full max-w-sm rounded-[2.25rem] border border-slate-200 bg-slate-950 p-3 shadow-2xl shadow-slate-300/70">
-      <div className="rounded-[1.75rem] bg-[#f7faf8] p-5">
-        <div className="mb-5 flex items-center justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">
-              Today
-            </p>
-            <h2 className="text-2xl font-bold text-slate-950">Milo</h2>
-          </div>
-          <div className="grid h-12 w-12 place-items-center rounded-full bg-emerald-100 text-2xl">
-            P
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <p className="font-semibold text-slate-950">Antibiotic</p>
-                <p className="text-sm text-slate-500">1 tablet with food</p>
-              </div>
-              <p className="rounded-full bg-sky-100 px-3 py-1 text-sm font-semibold text-sky-700">
-                8:00 AM
-              </p>
-            </div>
-            <button className="mt-4 h-12 w-full rounded-2xl bg-emerald-600 text-sm font-bold text-white shadow-lg shadow-emerald-200">
-              Mark as Taken
-            </button>
-          </div>
-
-          <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <p className="font-semibold text-slate-950">Joint support</p>
-                <p className="text-sm text-slate-500">2 ml oral dose</p>
-              </div>
-              <p className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-600">
-                6:30 PM
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-5 grid grid-cols-4 gap-2">
-          {screens.map((screen) => (
-            <div
-              key={screen}
-              className="rounded-2xl bg-white px-2 py-3 text-center text-xs font-semibold text-slate-500 ring-1 ring-slate-200"
-            >
-              {screen}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7faf8] text-slate-900">
       <section className="overflow-hidden border-b border-emerald-100 bg-[linear-gradient(180deg,#effaf4_0%,#f7faf8_70%,#ffffff_100%)]">
-        <div className="mx-auto grid min-h-[92vh] max-w-6xl items-center gap-12 px-6 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
-          <div className="pt-8 lg:pt-0">
+        <div className="mx-auto min-h-[72vh] max-w-4xl px-6 py-20 text-center lg:px-8">
+          <div>
             <p className="mb-5 inline-flex rounded-full border border-emerald-200 bg-white/80 px-4 py-2 text-sm font-semibold text-emerald-800 shadow-sm">
               Support for Pet Medication Log
             </p>
-            <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] tracking-normal text-slate-950 sm:text-6xl">
+            <h1 className="mx-auto max-w-3xl text-5xl font-bold leading-[1.02] tracking-normal text-slate-950 sm:text-6xl">
               Pet Medication Log
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               A simple, privacy-first iPhone app for tracking pet medications,
               setting local reminders, and keeping daily doses on schedule.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
               <a
-                href="mailto:support@petmedicationlog.app?subject=Pet%20Medication%20Log%20Support"
+                href="mailto:erosimcity@gmail.com?subject=Pet%20Medication%20Log%20Support"
                 className="inline-flex h-14 items-center justify-center rounded-2xl bg-slate-950 px-6 text-base font-bold text-white shadow-xl shadow-slate-300 transition hover:bg-slate-800"
               >
                 Email Support
@@ -145,7 +83,7 @@ export default function Home() {
                 View FAQ
               </a>
             </div>
-            <div className="mt-8 grid gap-3 text-sm font-medium text-slate-600 sm:grid-cols-3">
+            <div className="mx-auto mt-8 grid max-w-2xl gap-3 text-left text-sm font-medium text-slate-600 sm:grid-cols-3">
               {["Fully offline", "No account", "No external APIs"].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-2">
@@ -156,7 +94,6 @@ export default function Home() {
               )}
             </div>
           </div>
-          <PhonePreview />
         </div>
       </section>
 
@@ -258,10 +195,10 @@ export default function Home() {
             </p>
           </div>
           <a
-            href="mailto:support@petmedicationlog.app?subject=Pet%20Medication%20Log%20Support"
+            href="mailto:erosimcity@gmail.com?subject=Pet%20Medication%20Log%20Support"
             className="inline-flex h-14 items-center justify-center rounded-2xl bg-white px-6 text-base font-bold text-slate-950 transition hover:bg-emerald-100"
           >
-            support@petmedicationlog.app
+            erosimcity@gmail.com
           </a>
         </div>
       </section>
